@@ -1,0 +1,109 @@
+.signup {
+    background-color: #0e122c;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    font-family: var(--font);
+}
+
+.form{
+    background-color: #252525;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 30vw;
+    height: auto;
+    border: solid rgb(105, 105, 105) 0.5px;
+}
+
+.form > *{
+    width: 100%;
+    border: none;
+}
+
+.form input, .form select{
+    color: white;
+    margin-top: 5px;
+    height: 2rem;
+    font-size: 1.15rem;
+    border-radius: 3px;
+    background-color: rgb(95, 95, 95);
+    padding-left: 10px;
+}
+
+.form label {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtn {
+    border: none;
+    color: white;
+    margin-top: 10px;
+    font-family: 600;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: rgb(232, 128, 23);
+    width: 50%;
+    font-size: 1rem;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.line {
+    width: 2px;
+    height: 30px;
+    border: none;
+    background-color: rgb(232, 128, 23);
+}
+
+.uline {
+    width: 100%;
+    border-bottom: solid rgb(95, 95, 95) 0.1px;
+}
+
+.confirm input {
+    margin: 0;
+}
+
+.confirm {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    justify-content: flex-start;
+    gap:0.5rem;
+}
+
+.org{
+    font-size: 2rem;
+    color:rgb(232, 128, 23);
+}
