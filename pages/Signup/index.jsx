@@ -1,10 +1,11 @@
 import React from 'react'
-import styles from '@/styles/Login.module.css'
+import styles from '../../styles/Login.module.css'
 import LoginIcon from '@mui/icons-material/Login';
 
 const Login = () => {
     return (
-        <section className={styles.signup}>
+        <main>
+            <section className={styles.signup}>
             <div className={styles.wrapper}>
                 <form action="" className={styles.form}>
                     <div className={styles.title}>
@@ -37,6 +38,7 @@ const Login = () => {
                 </form>
             </div>
         </section>
+        </main>
     )
 }
 
