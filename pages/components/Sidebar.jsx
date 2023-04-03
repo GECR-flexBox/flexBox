@@ -80,7 +80,7 @@ const Sidebar = () => {
               </span>
               <b>Pages</b>
             </Link>
-            <Link href="/">
+            <Link href="/Signup">
               <span>
                 <LogoutOutlinedIcon />
               </span>
