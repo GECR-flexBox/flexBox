@@ -104,7 +104,6 @@ height: 100%;
 }
 
 .confirm {
-    margin-top: 20px;
     display: flex;
     align-items: center;
     font-size: 0.9rem;
@@ -116,4 +115,18 @@ height: 100%;
     font-size: 2rem;
     color:var(--blue2);
     font-family: var(--font8);
+}
+
+.login_que {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.forgot_pass {
+    font-size: 0.9rem;
+}
+
+.login_link {
+    text-decoration: none;
+    color: var(--blue2);
 }

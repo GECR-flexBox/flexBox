@@ -12,31 +12,19 @@ const Login = () => {
               <div className={styles.title}>
                 <div className={styles.line}></div>
                 <div className={styles.uline}>
-                  Welcome to <span className={styles.org}>flexBox</span>
+                  Welcome back to <span className={styles.org}>flexBox</span>
                 </div>
               </div>
               <label htmlFor="">Username:</label>
               <input type="text" />
-              <label htmlFor="">Email:</label>
-              <input type="email" />
               <label htmlFor="">Password:</label>
               <input type="password" />
-              <label htmlFor="">Confirm Password:</label>
-              <input type="password" />
-              <label>Country:</label>
-              <select name="countries" id="">
-                <option value="0">select you country</option>
-                <option value="1">India</option>
-                <option value="2">USA</option>
-              </select>
-              <span className={styles.login_que}>already have an account? <Link href="/Signin" className={styles.login_link}>Sign In</Link></span>
-              <div className={styles.confirm}>
-                <input type="checkbox" />I confirm to bunk lectures
-              </div>
+              <span className={styles.login_que}>don't have an account? <Link href="/Signup" className={styles.login_link}>Sign Up</Link></span>
+              <span className={styles.forgot_pass}><Link href="/Signup" className={styles.login_link}>forgot password?</Link></span>
               <div className={styles.btn}>
                 <button className={styles.subtn}>
                   <LoginIcon />
-                  Sign Up
+                  Sign In
                 </button>
               </div>
             </form>
