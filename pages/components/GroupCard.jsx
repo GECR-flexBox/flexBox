@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "../../styles/Groups.module.css";
 import dp from "../../static/imgs/groupback.png";
-const GroupCard = () => {
+const GroupCard = (props) => {
   return (
     <>
       <div id={styles.gpCrd}>
         <div id={styles.cdBack}>
           <img
-            src="https://github.com/KHUNTPRIYANSH/site_photos/blob/main/flexbox/groupback.png?raw=true"
+            // src="https://github.com/KHUNTPRIYANSH/site_photos/blob/main/flexbox/groupback.png?raw=true"
+            src={props.backImg}
             alt=""
           />
         </div>

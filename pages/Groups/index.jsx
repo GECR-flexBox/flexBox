@@ -54,7 +54,17 @@ const Groups = () => {
             </div>
           </div>
         </aside>
-        <GroupCard />
+        <div id={styles.groupCardsSection}>
+          <GroupCard backImg="https://github.com/KHUNTPRIYANSH/site_photos/blob/main/flexbox/groupback.png?raw=true" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb2.png" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb3.jpg" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb4.png" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb5.jpg" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb6.jpg" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb7.png" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb8.png" />
+          <GroupCard backImg="https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gb9.jpeg" />
+        </div>
       </section>
     </>
   );

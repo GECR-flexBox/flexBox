@@ -1,20 +1,23 @@
 .signup {
-    background-color: #0e122c;
+     /* background-color: #31343B; */
+     background-color: #252830;
     color: white;
-    width: 100vw;
-    height: 100vh;
+width: 100%;
+height: 100%;
     overflow: hidden;
-    position: fixed;
-    font-family: var(--font);
+    font-family: var(--font7);
+    display: grid;
+    background:linear-gradient(to left, #1f1625f3, #0f1834ea),
+    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
 }
 
 .form{
-    background-color: #252525;
+    background-color: #252525b2;
     padding: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -22,6 +25,7 @@
     align-content: center;
     width: 30vw;
     height: auto;
+    backdrop-filter: blur(3px);
     border: solid rgb(105, 105, 105) 0.5px;
 }
 
@@ -35,14 +39,16 @@
     margin-top: 5px;
     height: 2rem;
     font-size: 1.15rem;
+    font-family: var(--font8);
     border-radius: 3px;
-    background-color: rgb(95, 95, 95);
+    background-color: rgba(95, 95, 95, 0.559);
     padding-left: 10px;
 }
 
 .form label {
     font-size: 0.9rem;
     margin-top: 20px;
+    font-family: var(--font8);
     font-weight: 500;
 }
 
@@ -51,6 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font8);
 }
 
 .subtn {
@@ -60,7 +67,7 @@
     font-family: 600;
     height: 2rem;
     border-radius: 3px;
-    background-color: rgb(232, 128, 23);
+    background-color: var(--blue2);
     width: 50%;
     font-size: 1rem;
     margin-top: 20px;
@@ -68,6 +75,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    font-family: var(--font8);
 }
 
 .title {
@@ -76,13 +84,14 @@
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
+    font-family: var(--font8);
 }
 
 .line {
     width: 2px;
     height: 30px;
     border: none;
-    background-color: rgb(232, 128, 23);
+    background-color: var(--blue2);
 }
 
 .uline {
@@ -105,5 +114,6 @@
 
 .org{
     font-size: 2rem;
-    color:rgb(232, 128, 23);
+    color:var(--blue2);
+    font-family: var(--font8);
 }
