@@ -9,6 +9,7 @@ import WebIcon from "@mui/icons-material/Web";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import SportsCricketIcon from "@mui/icons-material/SportsCricket";
 import AddIcon from "@mui/icons-material/Add";
+import GroupCard from "../components/GroupCard";
 const Groups = () => {
   return (
     <>
@@ -53,6 +54,7 @@ const Groups = () => {
             </div>
           </div>
         </aside>
+        <GroupCard />
       </section>
     </>
   );
