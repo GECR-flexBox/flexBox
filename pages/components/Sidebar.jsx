@@ -1,6 +1,5 @@
 import React from "react";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import "../stylesheet/Sidebar.css";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
@@ -10,29 +9,30 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import InsertDriveFileOutlinedIcon from "@mui/icons-material/InsertDriveFileOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
+import styles from "../../styles/Sidebar.module.css"
 const Sidebar = () => {
   return (
     <>
-      <div id="side-nav">
-        <header id="side-header" className="row">
-          <div className="logo">
+      <div id={styles.side_nav}>
+        <header id={styles.side_header} className={styles.row}>
+          <div className={styles.logo}>
             Flex
-            <span className="gray">Box</span>
+            <span className={styles.gray}>Box</span>
           </div>
-          <div className="toggle gray">
+          <div className={`${styles.toggle} ${styles.gray}`}>
             <MenuOpenIcon />
           </div>
         </header>
-        <div id="nav-links">
-          <div id="link">
-            <Link to="/dashboard">
+        <div id={styles.nav_links}>
+          <div id={styles.link}>
+            <Link href="/Dashboard">
               <span>
                 <DashboardOutlinedIcon />
               </span>
               <b>dashboard</b>
             </Link>
-            <Link to="/">
+            <Link href="/">
               <span>
                 <HomeRoundedIcon />
               </span>
@@ -40,26 +40,26 @@ const Sidebar = () => {
             </Link>
           </div>
           <small>community</small>
-          <div id="link">
-            <Link to="/social">
+          <div id={styles.link}>
+            <Link href="/Social">
               <span>
                 <FavoriteBorderOutlinedIcon />
               </span>
               <b>social wall</b>
             </Link>
-            <Link to="/members">
+            <Link href="/Members">
               <span>
                 <LanguageOutlinedIcon />
               </span>
               <b>members</b>
             </Link>
-            <Link to="/groups">
+            <Link href="/Groups">
               <span>
                 <PeopleAltIcon />
               </span>
               <b>groups</b>
             </Link>
-            <Link to="/forums">
+            <Link href="/Forums">
               <span>
                 <ChatBubbleOutlineIcon />
               </span>
@@ -67,20 +67,20 @@ const Sidebar = () => {
             </Link>
           </div>
           <small>others</small>
-          <div id="link">
-            <Link to="/">
+          <div id={styles.link}>
+            <Link href="/">
               <span>
                 <ErrorOutlineIcon />
               </span>
               <b>news</b>
             </Link>
-            <Link to="/">
+            <Link href="/">
               <span>
                 <InsertDriveFileOutlinedIcon />
               </span>
               <b>Pages</b>
             </Link>
-            <Link to="/">
+            <Link href="/">
               <span>
                 <LogoutOutlinedIcon />
               </span>
