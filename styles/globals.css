@@ -28,6 +28,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+
 #app {
   width: 100%;
   /* background-color: crimson; */
@@ -39,21 +40,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  }
+}
 
-  #app>aside {
-    /* background-color: #252537; */
-    background-color: #1e1e2c;
-    height: 100%;
-    /* flex: 0.2; */
-    min-width: 270px;
-    color: #fff;
+#app>aside {
+  /* background-color: #252537; */
+  background-color: #1e1e2c;
+  height: 100%;
+  /* flex: 0.2; */
+  width: 270px;
+  color: #fff;
 }
 
 #app main {
   flex: 1;
   height: 100%;
 }
+
 #temp {
   height: 100vh;
 
@@ -66,3 +68,27 @@ body {
 }
 
 #sec-title {}
+
+[data-collapse="false"] {
+  width: 270px;
+}
+
+[data-collapse="true"] {
+  width: 5rem !important;
+}
+
+[data-collapse="true"] .sidebar_nav_txt {
+  display: none !important;
+}
+
+[data-collapse="true"] .gray {
+  transform: rotate(45deg) !important;
+}
+
+[data-collapse="true"] .toggle_btn {
+  transform: rotate(180deg);
+}
+
+.aside {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}

@@ -20,9 +20,14 @@
     font-weight: 600;
 }
 
+#side_header button {
+    border: none;
+    background: none;
+}
+
 .gray {
     color: var(--gray);
-    transition: 0.25s ease-in-out;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 }
 
 .logo span {
@@ -61,7 +66,7 @@
 #nav_links #link a span>* {
     color: var(--blue);
     margin-top: 5px;
-    transition: 0.15s ease-in-out;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 }
 
 
@@ -84,7 +89,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.35s ease-in;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 
 }
 
@@ -101,7 +106,7 @@
     gap: 10px;
     text-decoration: none;
     color: #fff;
-    transition: 0.15s ease-in-out;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
     padding: 7.5px 20px;
     text-transform: capitalize;
     position: relative;
@@ -113,6 +118,7 @@
     font-size: 0.75rem;
     letter-spacing: 2px;
     padding: 0px 20px;
+    margin: 10px;
 }
 
 #link a b {
