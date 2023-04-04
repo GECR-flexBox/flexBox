@@ -19,7 +19,6 @@ const Login = () => {
               <input type="text" />
               <label htmlFor="">Password:</label>
               <input type="password" />
-              <span className={styles.login_que}>don't have an account? <Link href="/Signup" className={styles.login_link}>Sign Up</Link></span>
               <span className={styles.forgot_pass}><Link href="/Signup" className={styles.login_link}>forgot password?</Link></span>
               <div className={styles.btn}>
                 <button className={styles.subtn}>
@@ -27,6 +26,7 @@ const Login = () => {
                   Sign In
                 </button>
               </div>
+              <span className={styles.login_que}>don't have an account? <Link href="/Signup" className={styles.login_link}>Sign Up</Link></span>
             </form>
           </div>
         </section>

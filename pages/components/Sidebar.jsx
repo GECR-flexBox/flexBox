@@ -87,7 +87,7 @@ const Sidebar = () => {
                 </span>
                 <b className="sidebar_nav_txt">Pages</b>
               </Link>
-              <Link href="/Signup">
+              <Link href="/Signin">
                 <span>
                   <LogoutOutlinedIcon />
                 </span>

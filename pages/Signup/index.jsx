@@ -29,7 +29,6 @@ const Login = () => {
                 <option value="1">India</option>
                 <option value="2">USA</option>
               </select>
-              <span className={styles.login_que}>already have an account? <Link href="/Signin" className={styles.login_link}>Sign In</Link></span>
               <div className={styles.confirm}>
                 <input type="checkbox" />I confirm to bunk lectures
               </div>
@@ -39,6 +38,7 @@ const Login = () => {
                   Sign Up
                 </button>
               </div>
+              <span className={styles.login_que}>already have an account? <Link href="/Signin" className={styles.login_link}>Sign In</Link></span>
             </form>
           </div>
         </section>
