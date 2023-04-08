@@ -34,7 +34,7 @@ body {
   width: 100%;
   /* background-color: crimson; */
   height: 100vh;
-  /* overflow-y: scroll; */
+  overflow-y: hidden;
 }
 
 .row {
@@ -49,6 +49,7 @@ body {
   height: 100%;
   /* flex: 0.2; */
   width: 270px;
+  flex-shrink: 0;
   color: #fff;
 }
 
@@ -97,4 +98,10 @@ body {
 
 .aside {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+@media (max-width:875px) {
+  #app>aside {
+    position: absolute;
+    left: -350px;
+  }
 }

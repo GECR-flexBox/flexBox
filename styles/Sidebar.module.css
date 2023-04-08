@@ -3,6 +3,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 #side_header {
@@ -124,3 +125,4 @@
 #link a b {
     font-size: 0.93rem;
 }
+@media (max-width:875px) {}
