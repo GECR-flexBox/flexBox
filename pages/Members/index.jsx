@@ -2,42 +2,43 @@ import React, { useState } from "react";
 import objects from "../../static/data/objects.json";
 import styles from "../../styles/Members.module.css";
 const Members = () => {
-  const [selectedUser, setSelectedUser] = useState(null);
+  const [member, setMember] = useState(objects.objects);
+  // console.log(member);
+  // let i = 1;
+  // setInterval(() => {
+  //   let nnn = Math.floor(Math.random() * 10000);
+  //   setMember((member) => [
+  //     ...member,
+  //     {
+  //       name: "Emma" + nnn,
+  //       image: `https://avatars.dicebear.com/api/human/{nnn}.svg`,
+  //       job: "Data Scientist",
+  //     },
+  //   ]);
+  // }, 3000);
 
-  const handleClick = (user) => {
-    setSelectedUser(user);
-  };
   return (
     <div id={styles.mem}>
       <div id={styles.secTitle}>members</div>
-      <div id={styles.Mbtn}>
+      {/* <div id={styles.Mbtn}>
         <div id={styles.Mbleft}>
           <div id={styles.Mbrs}>All Members</div>
         </div>
         <div id={styles.Mbright}>
           <div id={styles.Mbrs}>Last Active</div>
         </div>
-      </div>
+      </div> */}
 
       <div id={styles.memGrid}>
-        {objects.objects.map((obj) => (
-          <div id={styles.mCard} key={obj.name}>
+        {member.map((m) => (
+          <div id={styles.mCard} key={m.name}>
             <div id={styles.mCdDp}>
-              <img src={obj.image} alt={obj.name} />
+              <img src={m.image} alt={m.name} />
             </div>
-            <div id={styles.pName}>{obj.name}</div>
-            <div id={styles.pPost}>{obj.job}</div>
+            <div id={styles.pName}>{m.name}</div>
+            <div id={styles.pPost}>{m.job}</div>
           </div>
         ))}
-        {/* <div>
-          {objects.objects.map((object) => (
-            <div key={object.name}>
-              <h2>{object.name}</h2>
-              <img src={object.image} alt={object.name} />
-              <p>{object.job}</p>
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );
