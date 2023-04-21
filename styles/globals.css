@@ -34,7 +34,7 @@ body {
   width: 100%;
   /* background-color: crimson; */
   height: 100vh;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .row {
